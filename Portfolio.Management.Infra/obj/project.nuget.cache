@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JZyvlTr8UkU=",
+  "dgSpecHash": "mTTi+j4TKzI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Infra\\Portfolio.Management.Infra.csproj",
+  "projectFilePath": "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Infra\\Portfolio.Management.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael Sanzio\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Rafael Sanzio\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

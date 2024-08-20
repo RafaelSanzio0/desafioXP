@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mw39zdIEimA=",
+  "dgSpecHash": "xyJ4hYD0zyI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael Sanzio\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Rafael Sanzio\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

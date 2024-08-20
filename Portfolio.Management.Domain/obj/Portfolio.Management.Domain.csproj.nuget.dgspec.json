@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj": {}
+    "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj": {
+    "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
         "projectName": "Portfolio.Management.Domain",
-        "projectPath": "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
+        "projectPath": "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\Portfolio.Management.Domain.csproj",
         "packagesPath": "C:\\Users\\Rafael Sanzio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael Sanzio\\source\\repos\\Portfolio.Management.API\\Portfolio.Management.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Rafael Sanzio\\Documents\\Github\\Portfolio.Management.API\\Portfolio.Management.API\\Portfolio.Management.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rafael Sanzio\\AppData\\Roaming\\NuGet\\NuGet.Config",
