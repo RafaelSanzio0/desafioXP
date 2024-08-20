@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Portfolio.Management.API</name>
+    </assembly>
+    <members>
+        <member name="T:Portfolio.Management.API.Controllers.PortfolioController">
+            <summary>
+            Controller responsável na compra/venda e consulta de investimentos no portoflio do cliente
+            </summary>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.PortfolioController.#ctor(Portfolio.Management.Domain.Services.Investiment.IPortfolioService)">
+            <summary>
+            Controller responsável na compra/venda e consulta de investimentos no portoflio do cliente
+            </summary>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.PortfolioController.GetPortfolioByClientIdAsync(System.Int32)">
+            <summary>
+            Lista todos os produtos de investimento de um usuário
+            </summary>
+            <param name="userId">request:</param>
+            <remarks>
+            | Nome                                 | Tipo                  | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ----------------------| ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `UserId`                             | `int`                 | Id do usuário que esta consultando os investimentos                                                       | ✅                                        |
+            </remarks>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.PortfolioController.BuyFinancialProductAsync(Portfolio.Management.Domain.Dtos.Request.CreatePortfolioBuyRequest)">
+            <summary>
+            Realiza uma compra de um produto financeiro
+            </summary>
+            <param name="request">request:</param>
+            <remarks>
+            | Nome                                 | Tipo                  | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ----------------------| ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `UserId`                             | `int`                 | Id do usuário que esta realizando a compra                                                                | ✅                                        |
+            | `FinancialProductId`                 | `int`                 | Id do produto financeiro que esta sendo comprado                                                          | ✅                                        |
+            | `Quantity`                           | `int`                 | Quantidade do produto financeiro                                                                          | ✅                                        |
+            | `AveragePrice`                       | `decimal`             | Preço médio do produto financeiro                                                                         | ✅                                        |
+            </remarks>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.PortfolioController.SellFinancialProductAsync(Portfolio.Management.Domain.Dtos.Request.CreatePortfolioSellRequest)">
+            <summary>
+            Realiza uma venda de um produto financeiro
+            </summary>
+            <param name="request">request:</param>
+            <remarks>
+            | Nome                                 | Tipo                  | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ----------------------| ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `UserId`                             | `int`                 | Id do usuário que esta realizando a venda                                                                | ✅                                        |
+            | `FinancialProductId`                 | `int`                 | Id do produto financeiro que esta sendo vendido                                                          | ✅                                        |
+            | `Quantity`                           | `int`                 | Quantidade do produto financeiro                                                                          | ✅                                        |
+            </remarks>
+        </member>
+        <member name="T:Portfolio.Management.API.Controllers.ProductFinancialController">
+            <summary>
+            Controller responsável na gestão dos produtos de investimentos
+            </summary>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.ProductFinancialController.#ctor(Portfolio.Management.Domain.Services.FinancialProduct.IFinancialProductService)">
+            <summary>
+            Controller responsável na gestão dos produtos de investimentos
+            </summary>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.ProductFinancialController.GetAllFinancialProductsAsync">
+            <summary>
+            Retorna uma lista com todos os produtos financeiros disponiveis
+            </summary>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.ProductFinancialController.CreateFinancialProductAsync(Portfolio.Management.Domain.Dtos.Request.CreateFinancialProductRequest)">
+            <summary>
+            Cria um produto financeiro
+            </summary>
+            <param name="request">request:</param>
+            <remarks>
+            | Nome                                 | Tipo                  | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ----------------------| ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `Name`                               | `string`              | Nome do produto financeiro                                                                                | ✅                                        |
+            | `Type`                               | `int`                 | Tipo do produto financeiro (1- Stock, 2- Bond, 3- FII, 4- Crypto, 5- CDB, 6- Other )                      | ✅                                        |
+            | `Price`                              | `decimal`             | Preço do produto financeiro                                                                               | ✅                                        |
+            | `ExpirationDate`                     | `datetime`            | Data de expiração do produto financeiro                                                                   | ✅                                        |
+            </remarks>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.ProductFinancialController.UpdateUserAsync(Portfolio.Management.Domain.Dtos.Request.UpdateFinancialProductRequest,System.Int32)">
+            <summary>
+            Atualiza um produto financeiro
+            </summary>
+            <param name="request">request:</param>
+            <param name="id">request:</param>
+            <remarks>
+            | Nome                                 | Tipo       | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `Name`                               | `string`   | Nome do produto financeiro                                                                                | ❌                                        |
+            | `Price`                              | `decimal`  | Preço do produto financeiro                                                                               | ❌                                        |
+            | `ExpirationDate`                     | `datetime` | Data de expiração do produto financeiro                                                                   | ❌                                        |
+            | `Id`                                 | `int`      | id do produto financeiro                                                                                  | ✅                                        |
+            </remarks>
+        </member>
+        <member name="M:Portfolio.Management.API.Controllers.ProductFinancialController.DeleteUserAsync(System.Int32)">
+            <summary>
+            Deleta um produto financeiro
+            </summary>
+            <param name="id">request:</param>
+            <remarks>
+            | Nome                                 | Tipo       | Descrição                                                                                                 | Obrigatório                                |
+            | ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------|--------------------------------------------|
+            | `Id`                                 | `int`      | id do produto financeiro                                                                                  | ✅                                         |
+            </remarks>
+        </member>
+    </members>
+</doc>

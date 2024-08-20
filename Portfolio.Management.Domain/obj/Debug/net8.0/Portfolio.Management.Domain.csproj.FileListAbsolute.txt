@@ -1,0 +1,12 @@
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\bin\Debug\net8.0\Portfolio.Management.Domain.deps.json
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\bin\Debug\net8.0\Portfolio.Management.Domain.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\bin\Debug\net8.0\Portfolio.Management.Domain.pdb
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.csproj.AssemblyReference.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.AssemblyInfoInputs.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.AssemblyInfo.cs
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\refint\Portfolio.Management.Domain.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\Portfolio.Management.Domain.pdb
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Domain\obj\Debug\net8.0\ref\Portfolio.Management.Domain.dll

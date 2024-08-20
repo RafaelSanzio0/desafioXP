@@ -1,0 +1,17 @@
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Infra.deps.json
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Infra.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Infra.pdb
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Domain.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Domain.pdb
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.csproj.AssemblyReference.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.AssemblyInfoInputs.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.AssemblyInfo.cs
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfoli.D8886704.Up2Date
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\refint\Portfolio.Management.Infra.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.pdb
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\ref\Portfolio.Management.Infra.dll
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\bin\Debug\net8.0\Portfolio.Management.Infra.runtimeconfig.json
+C:\Users\Rafael Sanzio\source\repos\Portfolio.Management.API\Portfolio.Management.Infra\obj\Debug\net8.0\Portfolio.Management.Infra.genruntimeconfig.cache

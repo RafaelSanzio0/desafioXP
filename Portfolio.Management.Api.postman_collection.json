@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "54ee9e8e-6065-48e0-afea-2f8a2f24b223",
+		"name": "Portfolio.Management.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9712515"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "financialproducts",
+					"item": [
+						{
+							"name": "Retorna produtos financeiros disponiveis",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7097/v1/financialproducts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"financialproducts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/financialproducts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"financialproducts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cria um produto financeiro",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"bovespa\",\n  \"type\": 5,\n  \"price\": 250.20,\n  \"expirationDate\": \"2024-08-21T22:33:30.613Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7097/v1/financialproducts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"financialproducts"
+									]
+								},
+								"description": "| Nome                                 | Tipo                  | Descrição                                                                                                 | Obrigatório                                |\r\n| ------------------------------------ | ----------------------| ----------------------------------------------------------------------------------------------------------|--------------------------------------------|\r\n| `Name`                               | `string`              | Nome do produto financeiro                                                                                | ✅                                        |\r\n| `Type`                               | `int`                 | Tipo do produto financeiro (1- stock, 2- Bond, 3- FII, 4- Crypto, 5- CDB, 6- Other )                      | ✅                                        |\r\n| `Price`                              | `decimal`             | Preço do produto financeiro                                                                               | ✅                                        |\r\n| `ExpirationDate`                     | `datetime`            | Data de expiração do produto financeiro                                                                   | ✅                                        |"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": 6,\n  \"price\": \"<double>\",\n  \"expirationDate\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/financialproducts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"financialproducts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Atualiza um produto financeiro",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Name\": \"bovespa updated\",\n  \"price\": 100,\n  \"expirationDate\": \"2024-08-21T22:02:30.613\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7097/v1/financialproducts/:id",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"financialproducts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "7"
+										}
+									]
+								},
+								"description": "| Nome                                 | Tipo       | Descrição                                                                                                 | Obrigatório                                |\r\n| ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------|--------------------------------------------|\r\n| `Name`                               | `string`   | Nome do produto financeiro                                                                                | ❌                                        |\r\n| `Price`                              | `decimal`  | Preço do produto financeiro                                                                               | ❌                                        |\r\n| `ExpirationDate`                     | `datetime` | Data de expiração do produto financeiro                                                                   | ❌                                        |\r\n| `Id`                                 | `int`      | id do produto financeiro                                                                                  | ✅                                        |"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"price\": \"<double>\",\n  \"expirationDate\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/financialproducts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"financialproducts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Deleta um produto financeiro",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7097/v1/financialproducts/:id",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"financialproducts",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "(Required) request:"
+										}
+									]
+								},
+								"description": "| Nome                                 | Tipo       | Descrição                                                                                                 | Obrigatório                                |\r\n| ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------|--------------------------------------------|\r\n| `Id`                                 | `int`      | id do produto financeiro                                                                                  | ✅                                         |"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/financialproducts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"financialproducts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Portfolio",
+					"item": [
+						{
+							"name": "Comprar um produto financeiro",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": 2,\r\n  \"financialProductId\": 5,\r\n  \"quantity\": 50,\r\n  \"averagePrice\": 300.1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7097/v1/portfolio/investment/buy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"portfolio",
+										"investment",
+										"buy"
+									]
+								},
+								"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://localhost:7097/v1/portfolio/investment/buy' \\\r\n  -H 'accept: */*' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"userId\": 0,\r\n  \"financialProductId\": 0,\r\n  \"quantity\": 0,\r\n  \"averagePrice\": 0\r\n}'"
+							},
+							"response": []
+						},
+						{
+							"name": "Retorna produtos financeiros de um usuario",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7097/v1/portfolio/investment/user/:userId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"portfolio",
+										"investment",
+										"user",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/financialproducts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"financialproducts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Vender um produto financeiro",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": 2,\r\n  \"financialProductId\": 5,\r\n  \"quantity\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7097/v1/portfolio/investment/sell",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7097",
+									"path": [
+										"v1",
+										"portfolio",
+										"investment",
+										"sell"
+									]
+								},
+								"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://localhost:7097/v1/portfolio/investment/buy' \\\r\n  -H 'accept: */*' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"userId\": 0,\r\n  \"financialProductId\": 0,\r\n  \"quantity\": 0,\r\n  \"averagePrice\": 0\r\n}'"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

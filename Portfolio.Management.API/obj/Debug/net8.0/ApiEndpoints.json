@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.ProductFinancialController",
+    "Method": "GetAllFinancialProductsAsync",
+    "RelativePath": "v1/financialproducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.ProductFinancialController",
+    "Method": "CreateFinancialProductAsync",
+    "RelativePath": "v1/financialproducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Portfolio.Management.Domain.Dtos.Request.CreateFinancialProductRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.ProductFinancialController",
+    "Method": "UpdateUserAsync",
+    "RelativePath": "v1/financialproducts/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Portfolio.Management.Domain.Dtos.Request.UpdateFinancialProductRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.ProductFinancialController",
+    "Method": "DeleteUserAsync",
+    "RelativePath": "v1/financialproducts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.PortfolioController",
+    "Method": "BuyFinancialProductAsync",
+    "RelativePath": "v1/portfolio/investment/buy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Portfolio.Management.Domain.Dtos.Request.CreatePortfolioBuyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.PortfolioController",
+    "Method": "SellFinancialProductAsync",
+    "RelativePath": "v1/portfolio/investment/sell",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Portfolio.Management.Domain.Dtos.Request.CreatePortfolioSellRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Portfolio.Management.API.Controllers.PortfolioController",
+    "Method": "GetPortfolioByClientIdAsync",
+    "RelativePath": "v1/portfolio/investment/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
